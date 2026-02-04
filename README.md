@@ -27,20 +27,7 @@ O projeto segue o padrão de arquitetura **Model-View-Controller**, garantindo s
 * **`repository`**: Gerenciamento de persistência de dados no arquivo `estoque.csv`.
 
 ---
-
-## 🚀 Como Executar o Projeto
-
-### Pré-requisitos
-* Java JDK 17 ou superior instalado.
-* IDE de sua preferência (VS Code, IntelliJ ou Eclipse).
-
-### Passos
-1. Clone este repositório ou baixe os arquivos.
-2. Certifique-se de que a estrutura de pastas está correta na pasta `src`.
-3. Compile o projeto:
-   ```bash
-   javac -d bin src/*.java src/model/*.java src/controller/*.java src/repository/*.java src/view/*.java
-
+## Estrutura 
 src/
 ├── controller/        # Lógica de controle e eventos
 ├── model/             # Entidades de dados
@@ -49,7 +36,7 @@ src/
 └── App.java           # Classe principal (Main)
 
 
-🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 Linguagem: Java
 
 Interface Gráfica: Java Swing (AWT)

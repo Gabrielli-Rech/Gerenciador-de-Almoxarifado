@@ -28,12 +28,12 @@ O projeto segue o padrão de arquitetura **Model-View-Controller**, garantindo s
 
 ---
 ## Estrutura 
-src/
-├── controller/        # Lógica de controle e eventos
-├── model/             # Entidades de dados
-├── repository/        # Persistência em CSV
-├── view/              # Interfaces gráficas (Swing)
-└── App.java           # Classe principal (Main)
+src/<br>
+├── controller/        # Lógica de controle e eventos<br>
+├── model/             # Entidades de dados<br>
+├── repository/        # Persistência em CSV<br>
+├── view/              # Interfaces gráficas (Swing)<br>
+└── App.java           # Classe principal (Main)<br>
 
 
 ## 🛠️ Tecnologias Utilizadas

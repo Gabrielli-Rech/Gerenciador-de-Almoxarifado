@@ -1,18 +1,59 @@
-## Getting Started
+# 📦 Gerenciador de Almoxarifado
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+O **Gerenciador de Almoxarifado** é uma aplicação desktop desenvolvida em Java, focada na eficiência do controle de estoque. O sistema permite o gerenciamento completo de materiais (CRUD), com um dashboard dinâmico que sinaliza níveis críticos de armazenamento em tempo real.
 
-## Folder Structure
 
-The workspace contains two folders by default, where:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+---
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## ✨ Funcionalidades Principais
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+* **Dashboard Inteligente**: Visualização rápida do total de itens e quantidade de alertas críticos.
+* **CRUD Completo**: Adição, listagem, edição e exclusão de produtos de forma intuitiva.
+* **Controle de Saída**: Registro de retiradas com atualização instantânea do saldo.
+* **Alertas de Estoque**: Identificação visual (cor vermelha) para itens que atingiram o limite mínimo configurado.
+* **Persistência de Dados**: Salvamento automático em arquivo CSV, garantindo que os dados não sejam perdidos ao fechar a aplicação.
+* **Interface Premium**: Design moderno utilizando componentes Swing personalizados e separação lógica de ações por cores.
 
-## Dependency Management
+---
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## 🏗️ Arquitetura do Projeto (MVC)
+
+O projeto segue o padrão de arquitetura **Model-View-Controller**, garantindo separação de responsabilidades e facilidade de manutenção:
+
+* **`model`**: Classes que representam os dados (Produto).
+* **`view`**: Interface gráfica moderna (AlmoxarifadoGrafico).
+* **`controller`**: Lógica de negócio e mediação entre dados e interface.
+* **`repository`**: Gerenciamento de persistência de dados no arquivo `estoque.csv`.
+
+---
+
+## 🚀 Como Executar o Projeto
+
+### Pré-requisitos
+* Java JDK 17 ou superior instalado.
+* IDE de sua preferência (VS Code, IntelliJ ou Eclipse).
+
+### Passos
+1. Clone este repositório ou baixe os arquivos.
+2. Certifique-se de que a estrutura de pastas está correta na pasta `src`.
+3. Compile o projeto:
+   ```bash
+   javac -d bin src/*.java src/model/*.java src/controller/*.java src/repository/*.java src/view/*.java
+
+src/
+├── controller/        # Lógica de controle e eventos
+├── model/             # Entidades de dados
+├── repository/        # Persistência em CSV
+├── view/              # Interfaces gráficas (Swing)
+└── App.java           # Classe principal (Main)
+
+
+🛠️ Tecnologias Utilizadas
+Linguagem: Java
+
+Interface Gráfica: Java Swing (AWT)
+
+Armazenamento: Arquivo de texto (CSV)
+
+Paradigma: Programação Orientada a Objetos (POO)

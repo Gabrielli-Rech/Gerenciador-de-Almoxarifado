@@ -1,6 +1,6 @@
 # 📦 Gerenciador de Almoxarifado
 
-O **Gerenciador de Almoxarifado** é uma aplicação desktop desenvolvida em Java, focada na eficiência do controle de estoque. O sistema permite o gerenciamento completo de materiais (CRUD), com um dashboard dinâmico que sinaliza níveis críticos de armazenamento em tempo real!
+O **Gerenciador de Almoxarifado** é uma aplicação desktop desenvolvida em Java, focada na eficiência do controle de estoque. O sistema permite o gerenciamento completo de materiais (CRUD), com um dashboard dinâmico que sinaliza níveis críticos de armazenamento em tempo real!!
 
 
 
